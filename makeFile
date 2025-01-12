@@ -1,7 +1,0 @@
-final : all
-
-all :
-        gcc main.c katalogos.c -o ekatastima
-
-clean : 
-         rm *o.final
