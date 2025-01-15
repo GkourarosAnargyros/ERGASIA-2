@@ -26,6 +26,7 @@ int fd2[2];//epoikoinwnia katastimatos pelati
 int id,j,epitix=0,apotiximenes=0,kerdos=0;
 int apotix[20][5]={0};
 int pl[20]={0};
+dhmiourgiaKatalogou(k);
 //----------------------ARXH SERVER------------------------
 	for(j=0;j<pel;j++){
 	pipe(fd1);
@@ -51,9 +52,6 @@ int pl[20]={0};
 //---------------------Diadikasia Katastimatos-------------------
 		close(fd1[1]);
 		close(fd2[0]);
-		if(j==0){//Dhlwsh pinaka mono 1 fora
-			dhmiourgiaKatalogou(k);
-		}
 		printf("\n");
 		for (int i = 0; i < paraggelies; i++) {
 			int proion;
